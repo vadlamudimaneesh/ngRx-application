@@ -1,0 +1,16 @@
+
+<form class="user-form" #userForm="ngForm" (ngSubmit)="onUpdate(userForm)" >
+    <mat-form-field class="user-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter your Name" type="text" name="name" ngModel >
+    </mat-form-field>
+    <mat-form-field class="user-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Enter your Email" type="text" name="email" ngModel >
+    </mat-form-field>
+    <mat-form-field class="user-full-width">
+        <mat-label>Mobile</mat-label>
+        <input matInput placeholder="Enter your Mobile" type="text" name="mobile" ngModel >
+    </mat-form-field>
+    <button mat-raised-button color="primary" >update Form</button>
+</form>
